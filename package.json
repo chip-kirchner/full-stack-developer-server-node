@@ -1,0 +1,25 @@
+{
+  "name": "full-stack-developer-server-node",
+  "version": "1.0.0",
+  "description": "node.js http web server for tuiter application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chip-kirchner/full-stack-developer-server-node.git"
+  },
+  "keywords": [
+    "Node",
+    "REST",
+    "Server",
+    "HTTP"
+  ],
+  "author": "Chip Kirchner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chip-kirchner/full-stack-developer-server-node/issues"
+  },
+  "homepage": "https://github.com/chip-kirchner/full-stack-developer-server-node#readme"
+}
