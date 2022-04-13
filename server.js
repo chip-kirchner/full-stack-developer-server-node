@@ -6,7 +6,10 @@ import helloController
 import userController   from "./controllers/users-controller.js";
 import tuitsController from "./controllers/tuits-controller.js";
 
-mongoose.connect("mongodb+srv://webdevcourse:46s7ankM9wUmraVY@cluster0.zmo0z.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
+const CONNECTION_STRING = process.env.DB_CONNECTION_STRING
+    || 'mongodb://localhost:27017/webdev'
+
+mongoose.connect(CONNECTION_STRING);
 
 const app = express();
 app.use(cors());
