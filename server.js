@@ -13,10 +13,12 @@ console.log("Connecting to " + CONNECTION_STRING);
 
 mongoose.connect(CONNECTION_STRING);
 
+console.log("Connected");
+
 const app = express();
 app.use(cors());
 app.use(express.json());
 helloController(app);
 userController(app);
 tuitsController(app);
-app.listen(4000);
+app.listen(process.env.PORT || 4000);
